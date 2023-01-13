@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<body>
+			<img src="off.jpg" id="lamp" onclick="turn()">
+			
+			<script>
+			var lamp = document.getElementById("lamp");
+			var isOn = 0;
+			
+			function turn()
+			{
+				if(isOn == 0)
+				{
+					lamp.src="on.jpg";
+					isOn = 1;
+				}else{
+					lamp.src="off.jpg";
+					isOn = 0;		
+				}
+			}
+			
+			
+			</script>
+			</body>
+	</body>
+</html>
+
